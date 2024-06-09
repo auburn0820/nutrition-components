@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    group:
+      default:
+        - h2
+      local:
+        - h2
+  config:
+    import:
+      - classpath:application-common.yaml
+      - classpath:application-database.yaml

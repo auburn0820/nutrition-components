@@ -1,0 +1,15 @@
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+springdoc:
+  model-converters:
+    pageable-converter:
+      enabled: true
+  swagger-ui:
+    path: /api-docs
+    disable-swagger-default-url: true
+    display-operation-id: true
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+  use-fqn: true
