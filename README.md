@@ -1,16 +1,22 @@
 # nutrition-components
 
 ## 프로젝트 개요
+
 ### 실행방법
+
 ```bash
 ./gradlew jibDockerBuild
 docker-compose up
 ```
+
 ### SwaggerUI
+
 ```
 localhost:8080/api-docs
 ```
+
 ### 참고 REST API 설계 방법론
+
 https://cloud.google.com/apis/design?hl=ko
 
 # Nutrient API Documentation
@@ -54,14 +60,14 @@ https://cloud.google.com/apis/design?hl=ko
 
 ### Response
 
-- **Status**: 
-  - `201 Created`
+- **Status**:
+    - `201 Created`
 - **Body**
 
 ```json
 {
-	"code": "number",
-	"message": "string",
+  "code": "number",
+  "message": "string",
   "data": {
     "food_code": "string",
     "group_name": "string",
@@ -101,8 +107,8 @@ https://cloud.google.com/apis/design?hl=ko
 
 ```json
 {
-	"code": "number",
-	"message": "string",
+  "code": "number",
+  "message": "string",
   "data": {
     "food_code": "string",
     "group_name": "string",
@@ -148,8 +154,8 @@ https://cloud.google.com/apis/design?hl=ko
 
 ```json
 {
-	"code": "number",
-	"message": "string",
+  "code": "number",
+  "message": "string",
   "data": {
     "content": [
       {
@@ -241,8 +247,8 @@ https://cloud.google.com/apis/design?hl=ko
 
 ```json
 {
-	"code": "number",
-	"message": "string",
+  "code": "number",
+  "message": "string",
   "data": {
     "food_code": "string",
     "group_name": "string",
@@ -283,7 +289,7 @@ https://cloud.google.com/apis/design?hl=ko
 
 ```json
 {
-	"code": "number",
-	"message": "string"
+  "code": "number",
+  "message": "string"
 }
 ```
