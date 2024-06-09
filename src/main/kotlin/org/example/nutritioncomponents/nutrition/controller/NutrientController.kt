@@ -43,10 +43,10 @@ class NutrientController(
     @GetMapping("")
     fun findAllNutrients(
         pageable: Pageable,
-        @RequestParam foodName: String?,
-        @RequestParam researchYear: String?,
-        @RequestParam makerName: String?,
-        @RequestParam foodCode: String?
+        @RequestParam("food_name") foodName: String?,
+        @RequestParam("research_year") researchYear: String?,
+        @RequestParam("maker_name") makerName: String?,
+        @RequestParam("food_code") foodCode: String?
     ): ResponseEntity<ApiResponse<Page<NutrientResponse>>> {
         return success(
             httpStatus = HttpStatus.OK,
