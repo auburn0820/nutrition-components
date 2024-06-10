@@ -3,7 +3,7 @@
 ## 프로젝트 개요
 
 ### 실행방법
-
+- Docker Daemon이 실행된 상태가 요구됨
 ```bash
 ./gradlew jibDockerBuild
 docker-compose up
